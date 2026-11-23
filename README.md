@@ -15,7 +15,7 @@ Optional environment variables: `ADMIN_NAME`, `ADMIN_PIN`, `VAPID_SUBJECT` (mail
 Push notifications: Android — Chrome; iPhone (iOS 16.4+) — open in Safari, Share → Add to Home Screen, open from the icon, then More → Turn on notifications.
 
 ## Local run
-    DATABASE_URL=postgres://user:pass@localhost/db npm start   # http://localhost:3000
+    DATABASE_URL=postgres://user:pass@localhost/db npm start   (dev.js)   # http://localhost:3000
 
 ## Demo without a server
     npm run build-demo   # dist/demo.html

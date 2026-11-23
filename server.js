@@ -1,5 +1,5 @@
 // Entry point. On Vercel this file is the Express app (files in public/ are served automatically).
-// Locally: DATABASE_URL=postgres://... node server.js
+// Locally: DATABASE_URL=postgres://... npm start  (runs dev.js)
 const express = require('express');
 const path = require('path');
 const api = require('./lib/app');
@@ -11,8 +11,3 @@ app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'public', 'index.ht
 process.on('unhandledRejection', (e) => console.error('unhandledRejection', e));
 
 module.exports = app;
-
-if (require.main === module) {
-  const PORT = process.env.PORT || 3000;
-  app.listen(PORT, () => console.log(`VPS Turnover: http://localhost:${PORT}`));
-}
