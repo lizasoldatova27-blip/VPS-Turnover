@@ -4,7 +4,7 @@ Phone app for unit turnovers: units, tasks per person, a tick when work is done,
 
 ## Put it online (free): GitHub + Vercel + Neon Postgres
 1. Push this folder to a GitHub repository.
-2. vercel.com → Add New → Project → import the repository → Deploy (no settings needed).
+2. vercel.com → Add New → Project → import the repository → Deploy (no settings needed; Vercel detects Express from server.js).
 3. In the Vercel project: Storage → Create Database → Neon (Postgres), free plan → Connect to the project.
    This adds `DATABASE_URL` automatically. Then Deployments → ⋯ → Redeploy.
 4. Open the site. First sign-in: **Liza**, PIN **0000** — change it in People. Other people's PINs are shown in People.

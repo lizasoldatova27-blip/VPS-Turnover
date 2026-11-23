@@ -15,7 +15,8 @@
     "web-push": "^4.0.0"
   },
   "engines": {
-    "node": ">=20"
+    "node": "22.x"
   },
-  "private": true
+  "private": true,
+  "main": "server.js"
 }
