@@ -52,7 +52,8 @@ function sheet(title, options) {
 
 // ---------- вход ----------
 async function showLogin() {
-  S.people = DEMO ? await api('GET', '/api/people') : await fetch('/api/people').then((r) => r.json());
+  S.people = DEMO ? await api('GET', '/api/people') : await fetch('/api/people').then((r) => r.json()).catch((e) => ({ error: e.message }));
+  if (!Array.isArray(S.people)) { $app.innerHTML = `<header><h1>VPS Turnover</h1></header><main><div class="card"><b>The app can't reach its database.</b><p class="small">${esc(S.people.error || '')}</p><button class="btn" onclick="location.reload()">Try again</button></div></main>`; return; }
   let sel = null, pin = '';
   const draw = () => {
     if (!sel) {
