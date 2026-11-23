@@ -1,0 +1,1639 @@
+[
+ {
+  "region": "Alberta",
+  "property": "bcIMC Realty Corporation, Discovery Pointe Holdings Inc.",
+  "unit": "2615",
+  "code": "y64170-2615-A",
+  "kind": "Reno",
+  "notes": "Contractor: Stephen Hurley",
+  "tasks": [
+   {
+    "section": "Painting",
+    "item": "Painting - 1st Coat",
+    "description": "Suite Painting - Two Bedroom"
+   },
+   {
+    "section": "Painting",
+    "item": "Painting - Additional Coats",
+    "description": "Suite Painting - Two Bedrooms"
+   },
+   {
+    "section": "Painting",
+    "item": "Painting - Ceiling",
+    "description": "Suite Painting - Two Bedroom"
+   },
+   {
+    "section": "Cleaning",
+    "item": "Cleaning",
+    "description": "Clean entire unit to be rent ready"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "Install new vanity fixtures"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "Install new vanity undermount sink"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "New vanity light"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "New vanity quartz countertop"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "Replace vanity cabinet door"
+   },
+   {
+    "section": "Miscellaneous Items",
+    "item": "Miscellaneous Items Subcategory",
+    "description": "Breakfast Bar Demo"
+   },
+   {
+    "section": "Miscellaneous Items",
+    "item": "Miscellaneous Items Subcategory",
+    "description": "New Gables"
+   },
+   {
+    "section": "Other Items",
+    "item": "Blinds",
+    "description": "Install new blinds"
+   },
+   {
+    "section": "Other Items",
+    "item": "Shutoff Valves",
+    "description": "New shutoff valves"
+   },
+   {
+    "section": "Interior",
+    "item": "Electrical",
+    "description": "New ceiling light"
+   },
+   {
+    "section": "Interior",
+    "item": "Electrical",
+    "description": "Replace electrical switches or plug including cover"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Fixtures & Backsplash",
+    "description": "New backsplash"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Cabinets and Millwork",
+    "description": "Refinish kitchen interior cabinets and drawers"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Cabinets and Millwork",
+    "description": "Replace cabinet door"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Drawers",
+    "description": "Replace drawer door"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Countertop",
+    "description": "New quartz countertop"
+   }
+  ]
+ },
+ {
+  "region": "Alberta",
+  "property": "Rouleau",
+  "unit": "1001-111",
+  "code": "y40960-1001-111-A",
+  "kind": "Reno",
+  "notes": "Contractor: Stephen Hurley",
+  "tasks": [
+   {
+    "section": "Painting",
+    "item": "Painting - 1st Coat",
+    "description": "Suite Painting - One Bedroom"
+   },
+   {
+    "section": "Painting",
+    "item": "Painting - Additional Coats",
+    "description": "Suite Painting - One Bedroom"
+   },
+   {
+    "section": "Painting",
+    "item": "Painting - Ceiling",
+    "description": "Suite Painting - One Bedroom"
+   },
+   {
+    "section": "Cleaning",
+    "item": "Cleaning",
+    "description": "Clean entire unit to be rent ready"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "Install new vanity fixtures"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "Install new vanity undermount sink"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "New vanity quartz countertop"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "Replace vanity cabinet door"
+   },
+   {
+    "section": "Miscellaneous Items",
+    "item": "Miscellaneous Items Subcategory",
+    "description": "Additional painting"
+   },
+   {
+    "section": "Other Items",
+    "item": "Electrician Hourly Rate",
+    "description": "Electrician Services"
+   },
+   {
+    "section": "Other Items",
+    "item": "Blinds",
+    "description": "Install new blinds"
+   },
+   {
+    "section": "Other Items",
+    "item": "Shutoff Valves",
+    "description": "New shutoff valves"
+   },
+   {
+    "section": "Other Items",
+    "item": "Appliance",
+    "description": "Owner supplied full appliance installation"
+   },
+   {
+    "section": "Interior",
+    "item": "Electrical",
+    "description": "New ceiling light"
+   },
+   {
+    "section": "Interior",
+    "item": "Electrical",
+    "description": "Pendant light"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Fixtures & Backsplash",
+    "description": "New double sink (Undermount)"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Fixtures & Backsplash",
+    "description": "New plumbing fixtures"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Cabinets and Millwork",
+    "description": "Replace cabinet door"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Drawers",
+    "description": "Replace drawer door"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Countertop",
+    "description": "New quartz countertop"
+   }
+  ]
+ },
+ {
+  "region": "Alberta",
+  "property": "Rouleau",
+  "unit": "0403-111",
+  "code": "y40960-0403-111-A",
+  "kind": "Refresh",
+  "notes": "Contractor: Stephen Hurley",
+  "tasks": [
+   {
+    "section": "Painting",
+    "item": "Painting - 1st Coat",
+    "description": "Suite Painting - Two Bedroom"
+   },
+   {
+    "section": "Painting",
+    "item": "Painting - Additional Coats",
+    "description": "Suite Painting - Two Bedrooms"
+   },
+   {
+    "section": "Painting",
+    "item": "Painting - Ceiling",
+    "description": "Suite Painting - Two Bedroom"
+   },
+   {
+    "section": "Cleaning",
+    "item": "Cleaning",
+    "description": "Clean entire unit to be rent ready"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "New vanity light"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "Replace vanity cabinet door"
+   },
+   {
+    "section": "Miscellaneous Items",
+    "item": "Miscellaneous Items Subcategory",
+    "description": "Additional painting"
+   },
+   {
+    "section": "Other Items",
+    "item": "Electrician Hourly Rate",
+    "description": "Electrician Services"
+   },
+   {
+    "section": "Other Items",
+    "item": "Blinds",
+    "description": "Install new blinds"
+   },
+   {
+    "section": "Other Items",
+    "item": "Appliance",
+    "description": "Owner supplied full appliance installation"
+   },
+   {
+    "section": "Interior",
+    "item": "Doors",
+    "description": "New interior door including door hardware"
+   },
+   {
+    "section": "Interior",
+    "item": "Electrical",
+    "description": "New ceiling light"
+   },
+   {
+    "section": "Interior",
+    "item": "Electrical",
+    "description": "Pendant light"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Cabinets and Millwork",
+    "description": "Refinish kitchen interior cabinets and drawers"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Cabinets and Millwork",
+    "description": "Replace cabinet door"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Drawers",
+    "description": "Replace drawer door"
+   }
+  ]
+ },
+ {
+  "region": "Alberta",
+  "property": "Rouleau",
+  "unit": "0805-111",
+  "code": "y40960-0805-111-A",
+  "kind": "Refresh",
+  "notes": "Contractor: Stephen Hurley",
+  "tasks": [
+   {
+    "section": "Painting",
+    "item": "Painting - 1st Coat",
+    "description": "Suite Painting - One Bedroom"
+   },
+   {
+    "section": "Painting",
+    "item": "Painting - Additional Coats",
+    "description": "Suite Painting - One Bedroom"
+   },
+   {
+    "section": "Painting",
+    "item": "Painting - Ceiling",
+    "description": "Suite Painting - One Bedroom"
+   },
+   {
+    "section": "Cleaning",
+    "item": "Cleaning",
+    "description": "Clean entire unit to be rent ready"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "Install new vanity fixtures"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "Install new vanity undermount sink"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "New vanity light"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "New vanity quartz countertop"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "Replace vanity cabinet door"
+   },
+   {
+    "section": "Other Items",
+    "item": "Blinds",
+    "description": "Install new blinds"
+   },
+   {
+    "section": "Other Items",
+    "item": "Shutoff Valves",
+    "description": "New shutoff valves"
+   },
+   {
+    "section": "Other Items",
+    "item": "Appliance",
+    "description": "Owner supplied full appliance installation"
+   },
+   {
+    "section": "Interior",
+    "item": "Electrical",
+    "description": "New ceiling light"
+   },
+   {
+    "section": "Interior",
+    "item": "Electrical",
+    "description": "Pendant light"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Fixtures & Backsplash",
+    "description": "New double sink (Undermount)"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Fixtures & Backsplash",
+    "description": "New plumbing fixtures"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Cabinets and Millwork",
+    "description": "Replace cabinet door"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Drawers",
+    "description": "Replace drawer door"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Countertop",
+    "description": "New quartz countertop"
+   }
+  ]
+ },
+ {
+  "region": "Alberta",
+  "property": "Rouleau",
+  "unit": "0202-124",
+  "code": "y40960-0202-124-A",
+  "kind": "Refresh",
+  "notes": "Contractor: Stephen Hurley",
+  "tasks": [
+   {
+    "section": "Painting",
+    "item": "Painting - 1st Coat",
+    "description": "Suite Painting - Two Bedroom"
+   },
+   {
+    "section": "Painting",
+    "item": "Painting - Additional Coats",
+    "description": "Suite Painting - Two Bedrooms"
+   },
+   {
+    "section": "Painting",
+    "item": "Painting - Ceiling",
+    "description": "Suite Painting - Two Bedroom"
+   },
+   {
+    "section": "Cleaning",
+    "item": "Cleaning",
+    "description": "Clean entire unit to be rent ready"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "New vanity light"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "Replace vanity cabinet door"
+   },
+   {
+    "section": "Miscellaneous Items",
+    "item": "Miscellaneous Items Subcategory",
+    "description": "Additional painting"
+   },
+   {
+    "section": "Other Items",
+    "item": "Electrician Hourly Rate",
+    "description": "Electrician Services"
+   },
+   {
+    "section": "Other Items",
+    "item": "Blinds",
+    "description": "Install new blinds"
+   },
+   {
+    "section": "Other Items",
+    "item": "Appliance",
+    "description": "Owner supplied full appliance installation"
+   },
+   {
+    "section": "Interior",
+    "item": "Electrical",
+    "description": "New ceiling light"
+   },
+   {
+    "section": "Interior",
+    "item": "Electrical",
+    "description": "Pendant light"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Cabinets and Millwork",
+    "description": "Refinish kitchen interior cabinets and drawers"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Cabinets and Millwork",
+    "description": "Replace cabinet door"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Drawers",
+    "description": "Replace drawer door"
+   }
+  ]
+ },
+ {
+  "region": "Alberta",
+  "property": "bcIMC Realty Corporation, Discovery Pointe Holdings Inc.",
+  "unit": "1611",
+  "code": "y64170-1611-A",
+  "kind": "Reno",
+  "notes": "Contractor: Stephen Hurley",
+  "tasks": [
+   {
+    "section": "Painting",
+    "item": "Painting - 1st Coat",
+    "description": "Suite Painting - Two Bedroom"
+   },
+   {
+    "section": "Painting",
+    "item": "Painting - Additional Coats",
+    "description": "Suite Painting - Two Bedrooms"
+   },
+   {
+    "section": "Painting",
+    "item": "Painting - Ceiling",
+    "description": "Suite Painting - Two Bedroom"
+   },
+   {
+    "section": "Cleaning",
+    "item": "Cleaning",
+    "description": "Clean entire unit to be rent ready"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Tub & Surrounding Tiles",
+    "description": "Acid wash, sand, prep and reglaze existing tub"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Tub & Surrounding Tiles",
+    "description": "Reglaze tub surround tiles"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "Install new vanity fixtures"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "Install new vanity undermount sink"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "New vanity light"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "New vanity quartz countertop"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "Replace vanity cabinet door"
+   },
+   {
+    "section": "Miscellaneous Items",
+    "item": "Miscellaneous Items Subcategory",
+    "description": "Demolition"
+   },
+   {
+    "section": "Other Items",
+    "item": "Electrician Hourly Rate",
+    "description": "Electrician Services"
+   },
+   {
+    "section": "Other Items",
+    "item": "General Labour Hourly Rate",
+    "description": "General Labour"
+   },
+   {
+    "section": "Other Items",
+    "item": "Blinds",
+    "description": "Install new blinds"
+   },
+   {
+    "section": "Other Items",
+    "item": "Shutoff Valves",
+    "description": "New shutoff valves"
+   },
+   {
+    "section": "Other Items",
+    "item": "Appliance",
+    "description": "Owner supplied full appliance installation"
+   },
+   {
+    "section": "Other Items",
+    "item": "Appliance",
+    "description": "Owner supplied laundry center installation"
+   },
+   {
+    "section": "Other Items",
+    "item": "Plumber Hourly Rate",
+    "description": "Plumber Services"
+   },
+   {
+    "section": "Interior",
+    "item": "Doors",
+    "description": "New bifold doors including hardware"
+   },
+   {
+    "section": "Interior",
+    "item": "Doors",
+    "description": "New sliding doors including hardware (4ft or less)"
+   },
+   {
+    "section": "Interior",
+    "item": "Electrical",
+    "description": "New ceiling light"
+   },
+   {
+    "section": "Interior",
+    "item": "Electrical",
+    "description": "Replace electrical switches or plug including cover"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Fixtures & Backsplash",
+    "description": "New plumbing fixtures"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Cabinets and Millwork",
+    "description": "Replace cabinet door"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Drawers",
+    "description": "Replace drawer door"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Countertop",
+    "description": "New quartz countertop"
+   }
+  ]
+ },
+ {
+  "region": "Alberta",
+  "property": "Royal View",
+  "unit": "0212",
+  "code": "y40210-0212-A",
+  "kind": "Refresh",
+  "notes": "Contractor: Stephen Hurley",
+  "tasks": [
+   {
+    "section": "Painting",
+    "item": "Painting - 1st Coat",
+    "description": "Suite Painting - Two Bedroom"
+   },
+   {
+    "section": "Painting",
+    "item": "Painting - Additional Coats",
+    "description": "Suite Painting - Two Bedrooms"
+   },
+   {
+    "section": "Painting",
+    "item": "Painting - Ceiling",
+    "description": "Suite Painting - Two Bedroom"
+   },
+   {
+    "section": "Cleaning",
+    "item": "Cleaning",
+    "description": "Clean entire unit to be rent ready"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Tub & Surrounding Tiles",
+    "description": "Acid wash, sand, prep and reglaze existing tub"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Tub & Surrounding Tiles",
+    "description": "Reglaze tub surround tiles"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "Install new vanity drop in sink"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "Install new vanity fixtures"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "New vanity laminate countertop"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "New vanity light"
+   },
+   {
+    "section": "Other Items",
+    "item": "Electrician Hourly Rate",
+    "description": "Electrician Services"
+   },
+   {
+    "section": "Other Items",
+    "item": "General Labour Hourly Rate",
+    "description": "General Labour"
+   },
+   {
+    "section": "Other Items",
+    "item": "Shutoff Valves",
+    "description": "New shutoff valves"
+   },
+   {
+    "section": "Other Items",
+    "item": "Appliance",
+    "description": "Owner supplied full appliance installation"
+   },
+   {
+    "section": "Other Items",
+    "item": "Plumber Hourly Rate",
+    "description": "Plumber Services"
+   },
+   {
+    "section": "Interior",
+    "item": "Flooring",
+    "description": "New baseboard (for existing flooring)"
+   },
+   {
+    "section": "Interior",
+    "item": "Doors",
+    "description": "New sliding doors including hardware (4ft or less)"
+   },
+   {
+    "section": "Interior",
+    "item": "Doors",
+    "description": "New sliding doors including hardware (More than 4 ft.)"
+   },
+   {
+    "section": "Interior",
+    "item": "Electrical",
+    "description": "New ceiling light"
+   },
+   {
+    "section": "Interior",
+    "item": "Electrical",
+    "description": "Replace electrical switches or plug including cover"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Fixtures & Backsplash",
+    "description": "New double sink (Topmount)"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Fixtures & Backsplash",
+    "description": "New plumbing fixtures"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Cabinets and Millwork",
+    "description": "Refinish kitchen interior cabinets and drawers"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Countertop",
+    "description": "New laminate countertop"
+   }
+  ]
+ },
+ {
+  "region": "Alberta",
+  "property": "Royal View",
+  "unit": "0210",
+  "code": "y40210-0210-A",
+  "kind": "Refresh",
+  "notes": "Contractor: Stephen Hurley",
+  "tasks": [
+   {
+    "section": "Painting",
+    "item": "Painting - 1st Coat",
+    "description": "Suite Painting - Two Bedroom"
+   },
+   {
+    "section": "Painting",
+    "item": "Painting - Additional Coats",
+    "description": "Suite Painting - Two Bedrooms"
+   },
+   {
+    "section": "Painting",
+    "item": "Painting - Ceiling",
+    "description": "Suite Painting - Two Bedroom"
+   },
+   {
+    "section": "Cleaning",
+    "item": "Cleaning",
+    "description": "Clean entire unit to be rent ready"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "Install new vanity drop in sink"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "Install new vanity fixtures"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "New vanity laminate countertop"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "New vanity light"
+   },
+   {
+    "section": "Other Items",
+    "item": "Electrician Hourly Rate",
+    "description": "Electrician Services"
+   },
+   {
+    "section": "Other Items",
+    "item": "General Labour Hourly Rate",
+    "description": "General Labour"
+   },
+   {
+    "section": "Other Items",
+    "item": "Shutoff Valves",
+    "description": "New shutoff valves"
+   },
+   {
+    "section": "Other Items",
+    "item": "Appliance",
+    "description": "Owner supplied full appliance installation"
+   },
+   {
+    "section": "Other Items",
+    "item": "Plumber Hourly Rate",
+    "description": "Plumber Services"
+   },
+   {
+    "section": "Interior",
+    "item": "Electrical",
+    "description": "New ceiling light"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Fixtures & Backsplash",
+    "description": "New double sink (Topmount)"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Fixtures & Backsplash",
+    "description": "New plumbing fixtures"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Cabinets and Millwork",
+    "description": "Refinish kitchen interior cabinets and drawers"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Countertop",
+    "description": "New laminate countertop"
+   }
+  ]
+ },
+ {
+  "region": "Alberta",
+  "property": "Royal View",
+  "unit": "0309",
+  "code": "y40210-0309-A",
+  "kind": "Refresh",
+  "notes": "Contractor: Stephen Hurley",
+  "tasks": [
+   {
+    "section": "Painting",
+    "item": "Painting - 1st Coat",
+    "description": "Suite Painting - Two Bedroom"
+   },
+   {
+    "section": "Painting",
+    "item": "Painting - Additional Coats",
+    "description": "Suite Painting - Two Bedrooms"
+   },
+   {
+    "section": "Painting",
+    "item": "Painting - Ceiling",
+    "description": "Suite Painting - Two Bedroom"
+   },
+   {
+    "section": "Cleaning",
+    "item": "Cleaning",
+    "description": "Clean entire unit to be rent ready"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Tub & Surrounding Tiles",
+    "description": "Acid wash, sand, prep and reglaze existing tub"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Tub & Surrounding Tiles",
+    "description": "Reglaze tub surround tiles"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "Install new vanity drop in sink"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "Install new vanity fixtures"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "New vanity laminate countertop"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "New vanity light"
+   },
+   {
+    "section": "Other Items",
+    "item": "Electrician Hourly Rate",
+    "description": "Electrician Services"
+   },
+   {
+    "section": "Other Items",
+    "item": "General Labour Hourly Rate",
+    "description": "General Labour"
+   },
+   {
+    "section": "Other Items",
+    "item": "Shutoff Valves",
+    "description": "New shutoff valves"
+   },
+   {
+    "section": "Other Items",
+    "item": "Appliance",
+    "description": "Owner supplied full appliance installation"
+   },
+   {
+    "section": "Other Items",
+    "item": "Plumber Hourly Rate",
+    "description": "Plumber Services"
+   },
+   {
+    "section": "Interior",
+    "item": "Electrical",
+    "description": "New ceiling light"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Fixtures & Backsplash",
+    "description": "New double sink (Topmount)"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Fixtures & Backsplash",
+    "description": "New plumbing fixtures"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Cabinets and Millwork",
+    "description": "Refinish kitchen interior cabinets and drawers"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Countertop",
+    "description": "New laminate countertop"
+   }
+  ]
+ },
+ {
+  "region": "Alberta",
+  "property": "Royal View",
+  "unit": "0504",
+  "code": "y40210-0504-A",
+  "kind": "Refresh",
+  "notes": "Contractor: Stephen Hurley",
+  "tasks": [
+   {
+    "section": "Painting",
+    "item": "Painting - 1st Coat",
+    "description": "Suite Painting - One Bedroom"
+   },
+   {
+    "section": "Painting",
+    "item": "Painting - Additional Coats",
+    "description": "Suite Painting - One Bedroom"
+   },
+   {
+    "section": "Painting",
+    "item": "Painting - Ceiling",
+    "description": "Suite Painting - One Bedroom"
+   },
+   {
+    "section": "Cleaning",
+    "item": "Cleaning",
+    "description": "Clean entire unit to be rent ready"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Tub & Surrounding Tiles",
+    "description": "Acid wash, sand, prep and reglaze existing tub"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Tub & Surrounding Tiles",
+    "description": "Reglaze tub surround tiles"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Hardware",
+    "description": "Install new bathroom hardware (curved rod, towel bar, toilet paper holder, shower hooks etc)"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "Install new vanity drop in sink"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "Install new vanity fixtures"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "New vanity laminate countertop"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "New vanity light"
+   },
+   {
+    "section": "Miscellaneous Items",
+    "item": "Miscellaneous Items Subcategory",
+    "description": "Additional painting"
+   },
+   {
+    "section": "Other Items",
+    "item": "Electrician Hourly Rate",
+    "description": "Electrician Services"
+   },
+   {
+    "section": "Other Items",
+    "item": "General Labour Hourly Rate",
+    "description": "General Labour"
+   },
+   {
+    "section": "Other Items",
+    "item": "Shutoff Valves",
+    "description": "New shutoff valves"
+   },
+   {
+    "section": "Other Items",
+    "item": "Appliance",
+    "description": "Owner supplied full appliance installation"
+   },
+   {
+    "section": "Other Items",
+    "item": "Plumber Hourly Rate",
+    "description": "Plumber Services"
+   },
+   {
+    "section": "Interior",
+    "item": "Flooring",
+    "description": "New LVP including baseboards and transition strips (Click)- 5.5mm"
+   },
+   {
+    "section": "Interior",
+    "item": "Electrical",
+    "description": "New ceiling light"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Fixtures & Backsplash",
+    "description": "New double sink (Topmount)"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Fixtures & Backsplash",
+    "description": "New plumbing fixtures"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Cabinets and Millwork",
+    "description": "Refinish kitchen interior cabinets and drawers"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Countertop",
+    "description": "New laminate countertop"
+   }
+  ]
+ },
+ {
+  "region": "Alberta",
+  "property": "bcIMC Realty Corporation, Discovery Pointe Holdings Inc.",
+  "unit": "2015",
+  "code": "y64170-2015-A",
+  "kind": "Refresh",
+  "notes": "Contractor: Stephen Hurley",
+  "tasks": [
+   {
+    "section": "Painting",
+    "item": "Painting - 1st Coat",
+    "description": "Suite Painting - Two Bedroom"
+   },
+   {
+    "section": "Painting",
+    "item": "Painting - Additional Coats",
+    "description": "Suite Painting - Two Bedrooms"
+   },
+   {
+    "section": "Painting",
+    "item": "Painting - Ceiling",
+    "description": "Suite Painting - Two Bedroom"
+   },
+   {
+    "section": "Cleaning",
+    "item": "Cleaning",
+    "description": "Clean entire unit to be rent ready"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Tub & Surrounding Tiles",
+    "description": "Acid wash, sand, prep and reglaze existing tub"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Tub & Surrounding Tiles",
+    "description": "Reglaze tub surround tiles"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "New vanity light"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "Replace vanity cabinet door"
+   },
+   {
+    "section": "Other Items",
+    "item": "Electrician Hourly Rate",
+    "description": "Electrician Services"
+   },
+   {
+    "section": "Other Items",
+    "item": "General Labour Hourly Rate",
+    "description": "General Labour"
+   },
+   {
+    "section": "Other Items",
+    "item": "Blinds",
+    "description": "Install new blinds"
+   },
+   {
+    "section": "Interior",
+    "item": "Flooring",
+    "description": "New LVP including baseboards and transition strips (Click)- 5.5mm"
+   },
+   {
+    "section": "Interior",
+    "item": "Doors",
+    "description": "New sliding doors including hardware (4ft or less)"
+   },
+   {
+    "section": "Interior",
+    "item": "Electrical",
+    "description": "New ceiling light"
+   },
+   {
+    "section": "Interior",
+    "item": "Electrical",
+    "description": "Replace electrical switches or plug including cover"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Cabinets and Millwork",
+    "description": "Refinish kitchen interior cabinets and drawers"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Cabinets and Millwork",
+    "description": "Replace cabinet door"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Drawers",
+    "description": "Replace drawer door"
+   }
+  ]
+ },
+ {
+  "region": "Alberta",
+  "property": "bcIMC Realty Corporation, Discovery Pointe Holdings Inc.",
+  "unit": "2112",
+  "code": "y64170-2112-A",
+  "kind": "Refresh",
+  "notes": "Contractor: Stephen Hurley",
+  "tasks": [
+   {
+    "section": "Painting",
+    "item": "Painting - 1st Coat",
+    "description": "Suite Painting - One Bedroom"
+   },
+   {
+    "section": "Painting",
+    "item": "Painting - Additional Coats",
+    "description": "Suite Painting - One Bedroom"
+   },
+   {
+    "section": "Painting",
+    "item": "Painting - Ceiling",
+    "description": "Suite Painting - One Bedroom"
+   },
+   {
+    "section": "Cleaning",
+    "item": "Cleaning",
+    "description": "Clean entire unit to be rent ready"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Tub & Surrounding Tiles",
+    "description": "Acid wash, sand, prep and reglaze existing tub"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Tub & Surrounding Tiles",
+    "description": "Reglaze tub surround tiles"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "Install new vanity fixtures"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "New vanity frameless mirror"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "New vanity light"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "Replace vanity cabinet door"
+   },
+   {
+    "section": "Miscellaneous Items",
+    "item": "Miscellaneous Items Subcategory",
+    "description": "Casing"
+   },
+   {
+    "section": "Other Items",
+    "item": "General Labour Hourly Rate",
+    "description": "General Labour"
+   },
+   {
+    "section": "Other Items",
+    "item": "Blinds",
+    "description": "Install new blinds"
+   },
+   {
+    "section": "Interior",
+    "item": "Flooring",
+    "description": "New LVP including baseboards and transition strips (Click)- 5.5mm"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Fixtures & Backsplash",
+    "description": "New plumbing fixtures"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Cabinets and Millwork",
+    "description": "Refinish kitchen interior cabinets and drawers"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Cabinets and Millwork",
+    "description": "Replace cabinet door"
+   },
+   {
+    "section": "Kitchen",
+    "item": "Drawers",
+    "description": "Replace drawer door"
+   }
+  ]
+ },
+ {
+  "region": "Alberta",
+  "property": "SODO",
+  "unit": "610",
+  "kind": "Paint and Clean",
+  "move_out": "2026-11-30",
+  "planned_date": "",
+  "move_in": "2026-12-03",
+  "notes": "",
+  "po": "",
+  "tasks": [
+   {
+    "section": "Painting",
+    "item": "Painting",
+    "description": "Paint entire unit"
+   },
+   {
+    "section": "Cleaning",
+    "item": "Cleaning",
+    "description": "Clean entire unit"
+   }
+  ]
+ },
+ {
+  "region": "Alberta",
+  "property": "SODO",
+  "unit": "2004",
+  "kind": "Paint and Clean",
+  "move_out": "2026-11-30",
+  "planned_date": "",
+  "move_in": "2026-12-17",
+  "notes": "",
+  "po": "",
+  "tasks": [
+   {
+    "section": "Painting",
+    "item": "Painting",
+    "description": "Paint entire unit"
+   },
+   {
+    "section": "Cleaning",
+    "item": "Cleaning",
+    "description": "Clean entire unit"
+   }
+  ]
+ },
+ {
+  "region": "Alberta",
+  "property": "SODO",
+  "unit": "2904",
+  "kind": "Paint and Clean",
+  "move_out": "2026-11-19",
+  "planned_date": "2026-11-27",
+  "move_in": "",
+  "notes": "The entire unit needs to be painted, and the bathroom sink needs to be replaced.",
+  "po": "374958",
+  "tasks": [
+   {
+    "section": "Painting",
+    "item": "Painting",
+    "description": "Paint entire unit"
+   },
+   {
+    "section": "Cleaning",
+    "item": "Cleaning",
+    "description": "Clean entire unit"
+   },
+   {
+    "section": "Bathroom(s)",
+    "item": "Vanity",
+    "description": "Replace bathroom sink"
+   }
+  ]
+ },
+ {
+  "region": "Alberta",
+  "property": "SODO",
+  "unit": "1302",
+  "kind": "Paint and Clean",
+  "move_out": "2026-11-28",
+  "planned_date": "",
+  "move_in": "",
+  "notes": "",
+  "po": "",
+  "tasks": [
+   {
+    "section": "Painting",
+    "item": "Painting",
+    "description": "Paint entire unit"
+   },
+   {
+    "section": "Cleaning",
+    "item": "Cleaning",
+    "description": "Clean entire unit"
+   }
+  ]
+ },
+ {
+  "region": "Alberta",
+  "property": "SODO",
+  "unit": "2804",
+  "kind": "Paint and Clean",
+  "move_out": "2026-11-28",
+  "planned_date": "",
+  "move_in": "",
+  "notes": "",
+  "po": "",
+  "tasks": [
+   {
+    "section": "Painting",
+    "item": "Painting",
+    "description": "Paint entire unit"
+   },
+   {
+    "section": "Cleaning",
+    "item": "Cleaning",
+    "description": "Clean entire unit"
+   }
+  ]
+ },
+ {
+  "region": "Alberta",
+  "property": "SODO",
+  "unit": "1308",
+  "kind": "Paint and Clean",
+  "move_out": "2026-11-30",
+  "planned_date": "",
+  "move_in": "",
+  "notes": "",
+  "po": "",
+  "tasks": [
+   {
+    "section": "Painting",
+    "item": "Painting",
+    "description": "Paint entire unit"
+   },
+   {
+    "section": "Cleaning",
+    "item": "Cleaning",
+    "description": "Clean entire unit"
+   }
+  ]
+ },
+ {
+  "region": "Alberta",
+  "property": "SODO",
+  "unit": "1801",
+  "kind": "Paint and Clean",
+  "move_out": "2026-11-17",
+  "planned_date": "2026-11-26",
+  "move_in": "",
+  "notes": "Need to repaint and clean the entire unit.",
+  "po": "374439",
+  "tasks": [
+   {
+    "section": "Painting",
+    "item": "Painting",
+    "description": "Paint entire unit"
+   },
+   {
+    "section": "Cleaning",
+    "item": "Cleaning",
+    "description": "Clean entire unit"
+   }
+  ]
+ },
+ {
+  "region": "Alberta",
+  "property": "SODO",
+  "unit": "1507",
+  "kind": "Paint and Clean",
+  "move_out": "2026-11-26",
+  "planned_date": "",
+  "move_in": "",
+  "notes": "",
+  "po": "",
+  "tasks": [
+   {
+    "section": "Painting",
+    "item": "Painting",
+    "description": "Paint entire unit"
+   },
+   {
+    "section": "Cleaning",
+    "item": "Cleaning",
+    "description": "Clean entire unit"
+   }
+  ]
+ },
+ {
+  "region": "Alberta",
+  "property": "SODO",
+  "unit": "606",
+  "kind": "Paint and Clean",
+  "move_out": "2026-11-28",
+  "planned_date": "",
+  "move_in": "",
+  "notes": "",
+  "po": "",
+  "tasks": [
+   {
+    "section": "Painting",
+    "item": "Painting",
+    "description": "Paint entire unit"
+   },
+   {
+    "section": "Cleaning",
+    "item": "Cleaning",
+    "description": "Clean entire unit"
+   }
+  ]
+ },
+ {
+  "region": "Alberta",
+  "property": "SODO",
+  "unit": "3502",
+  "kind": "Paint and Clean",
+  "move_out": "2026-11-30",
+  "planned_date": "",
+  "move_in": "",
+  "notes": "They have not decided yet",
+  "po": "",
+  "tasks": [
+   {
+    "section": "Painting",
+    "item": "Painting",
+    "description": "Paint entire unit"
+   },
+   {
+    "section": "Cleaning",
+    "item": "Cleaning",
+    "description": "Clean entire unit"
+   }
+  ]
+ },
+ {
+  "region": "Alberta",
+  "property": "SODO",
+  "unit": "1808",
+  "kind": "Paint and Clean",
+  "move_out": "2026-11-30",
+  "planned_date": "",
+  "move_in": "",
+  "notes": "",
+  "po": "",
+  "tasks": [
+   {
+    "section": "Painting",
+    "item": "Painting",
+    "description": "Paint entire unit"
+   },
+   {
+    "section": "Cleaning",
+    "item": "Cleaning",
+    "description": "Clean entire unit"
+   }
+  ]
+ },
+ {
+  "region": "Alberta",
+  "property": "SODO",
+  "unit": "2707",
+  "kind": "Paint and Clean",
+  "move_out": "2026-11-27",
+  "planned_date": "",
+  "move_in": "",
+  "notes": "",
+  "po": "",
+  "tasks": [
+   {
+    "section": "Painting",
+    "item": "Painting",
+    "description": "Paint entire unit"
+   },
+   {
+    "section": "Cleaning",
+    "item": "Cleaning",
+    "description": "Clean entire unit"
+   }
+  ]
+ },
+ {
+  "region": "Alberta",
+  "property": "SODO",
+  "unit": "3009",
+  "kind": "Paint and Clean",
+  "move_out": "2026-11-30",
+  "planned_date": "",
+  "move_in": "",
+  "notes": "They have not decided yet",
+  "po": "",
+  "tasks": [
+   {
+    "section": "Painting",
+    "item": "Painting",
+    "description": "Paint entire unit"
+   },
+   {
+    "section": "Cleaning",
+    "item": "Cleaning",
+    "description": "Clean entire unit"
+   }
+  ]
+ },
+ {
+  "region": "Alberta",
+  "property": "SODO",
+  "unit": "3506",
+  "kind": "Paint and Clean",
+  "move_out": "2026-11-30",
+  "planned_date": "",
+  "move_in": "",
+  "notes": "",
+  "po": "",
+  "tasks": [
+   {
+    "section": "Painting",
+    "item": "Painting",
+    "description": "Paint entire unit"
+   },
+   {
+    "section": "Cleaning",
+    "item": "Cleaning",
+    "description": "Clean entire unit"
+   }
+  ]
+ }
+]
