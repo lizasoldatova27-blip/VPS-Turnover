@@ -2,6 +2,7 @@
 (() => {
 'use strict';
 const DEMO = !!window.VPS_DEMO;
+const LOGO = window.VPS_LOGO || '/logo.png';
 const mem = {};
 const store = { get: (k) => { try { return store.get(k); } catch { return mem[k] ?? null; } }, set: (k, v) => { try { store.set(k, v); } catch { mem[k] = String(v); } }, del: (k) => { try { store.del(k); } catch { delete mem[k]; } } };
 const $app = document.getElementById('app');
@@ -57,7 +58,7 @@ async function showLogin() {
   let sel = null, pin = '';
   const draw = () => {
     if (!sel) {
-      $app.innerHTML = `<header><h1>VPS Turnover</h1></header>${demoBar()}<main><h2>Who are you?</h2>
+      $app.innerHTML = `<header><img class="logo" src="${LOGO}" alt="VPS"><h1>Turnover</h1></header>${demoBar()}<main><img class="biglogo" src="${LOGO}" alt="VPS Construction"><h2>Who are you?</h2>
         ${S.people.map((p) => `<button class="list-btn" data-id="${p.id}"><b>${esc(p.name)}</b></button>`).join('')}</main>`;
       $app.querySelectorAll('[data-id]').forEach((b) => b.onclick = () => { sel = S.people.find((p) => p.id == b.dataset.id); draw(); });
     } else {
@@ -94,7 +95,7 @@ function layout(title, body, opts = {}) {
   if (S.user.role === 'admin') tabs.push(['people', '👥', 'People']);
   tabs.push(['more', '⚙︎', 'More']);
   const cur = location.hash.slice(1).split('-')[0] || 'my';
-  $app.innerHTML = `<header>${opts.back ? `<button id="back">‹</button>` : ''}<h1>${esc(title)}</h1>${opts.action || ''}</header>${demoBar()}
+  $app.innerHTML = `<header>${opts.back ? `<button id="back">‹</button>` : `<img class="logo" src="${LOGO}" alt="VPS">`}<h1>${esc(title)}</h1>${opts.action || ''}</header>${demoBar()}
     <main>${body}</main>
     <nav>${tabs.map(([k, i, l]) => `<button class="${cur === k || (cur === 'apt' && k === 'apts') || (cur === 'new' && k === 'apts') || (cur === 'edit' && k === 'apts') || (cur === 'archive' && k === 'apts') ? 'on' : ''}" data-go="${k}"><span class="i">${i}</span>${l}</button>`).join('')}</nav>`;
   $app.querySelectorAll('[data-go]').forEach((b) => b.onclick = () => { location.hash = b.dataset.go; });
