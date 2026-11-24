@@ -98,6 +98,7 @@ function layout(title, body, opts = {}) {
   $app.innerHTML = `<header>${opts.back ? `<button id="back">‹</button>` : `<img class="logo" src="${LOGO}" alt="VPS">`}<h1>${esc(title)}</h1>${opts.action || ''}</header>${demoBar()}
     <main>${body}</main>
     <nav>${tabs.map(([k, i, l]) => `<button class="${cur === k || (cur === 'apt' && k === 'apts') || (cur === 'new' && k === 'apts') || (cur === 'edit' && k === 'apts') || (cur === 'archive' && k === 'apts') ? 'on' : ''}" data-go="${k}"><span class="i">${i}</span>${l}</button>`).join('')}</nav>`;
+  if (!opts.noAi) { const f = document.createElement('button'); f.className = 'aifab'; f.innerHTML = '✨ Ask AI'; f.onclick = () => { location.hash = 'ai'; }; $app.appendChild(f); }
   $app.querySelectorAll('[data-go]').forEach((b) => b.onclick = () => { location.hash = b.dataset.go; });
   if (opts.back) $app.querySelector('#back').onclick = () => history.length > 1 ? history.back() : (location.hash = opts.back);
   bindDemo();
@@ -413,6 +414,33 @@ async function viewSettings() {
   $app.querySelector('#out').onclick = () => logout();
 }
 
+// ---------- AI assistant ----------
+S.chat = [];
+const mdLite = (t) => esc(t).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/^\s*[-*•] /gm, '• ').replace(/\n/g, '<br>');
+function viewAi() {
+  const tips = S.user.role === 'admin'
+    ? ['What is due this week?', 'Which units still have unassigned tasks?', 'What was finished today?', 'Is anything overdue?']
+    : ['What do I have left to do?', 'Which of my units are due first?', 'What did I finish this week?'];
+  const msgs = S.chat.map((m) => `<div class="msg ${m.role}">${m.role === 'model' ? mdLite(m.text) : esc(m.text)}</div>`).join('');
+  const body = `<div id="chat">${msgs || `<div class="card"><b>✨ AI assistant</b><p class="small" style="margin:6px 0 0">Ask anything about units, tasks, dates and who is doing what. You can write in English or Russian.</p></div>
+    <div class="filters" style="flex-wrap:wrap">${tips.map((t) => `<button class="chip" data-tip="${esc(t)}">${esc(t)}</button>`).join('')}</div>`}
+    ${S.aiBusy ? '<div class="msg model muted">Thinking…</div>' : ''}</div>
+    <form id="aiForm" class="aibar"><input id="aiIn" placeholder="Ask a question…" autocomplete="off" ${S.aiBusy ? 'disabled' : ''}><button class="btn sm" ${S.aiBusy ? 'disabled' : ''}>Send</button></form>`;
+  layout('AI assistant', body, { noAi: true, action: S.chat.length ? '<button id="clr">Clear</button>' : '' });
+  const send = async (text) => {
+    if (!text.trim() || S.aiBusy) return;
+    S.chat.push({ role: 'user', text: text.trim() }); S.aiBusy = true; viewAi();
+    try { const r = await api('POST', '/api/ai', { messages: S.chat }); S.chat.push({ role: 'model', text: r.text }); }
+    catch (e) { S.chat.push({ role: 'model', text: '⚠️ ' + e.message }); }
+    S.aiBusy = false; if (location.hash === '#ai') viewAi();
+  };
+  $app.querySelectorAll('[data-tip]').forEach((b) => b.onclick = () => send(b.dataset.tip));
+  $app.querySelector('#aiForm').onsubmit = (e) => { e.preventDefault(); send($app.querySelector('#aiIn').value); };
+  const c = $app.querySelector('#clr'); if (c) c.onclick = () => { S.chat = []; viewAi(); };
+  window.scrollTo(0, document.body.scrollHeight);
+  if (!S.aiBusy) $app.querySelector('#aiIn').focus({ preventScroll: true });
+}
+
 // ---------- маршрутизация ----------
 async function route() {
   if (!S.user) return;
@@ -426,6 +454,7 @@ async function route() {
     else if (r === 'feed') await viewFeed();
     else if (r === 'people' && S.user.role === 'admin') await viewPeople();
     else if (r === 'more') await viewSettings();
+    else if (r === 'ai') { viewAi(); return; }
     else await viewMy();
     window.scrollTo(0, 0);
   } catch (e) { toast(e.message); }

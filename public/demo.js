@@ -90,6 +90,7 @@ window.VPS_MOCK = async (method, url, body, token) => {
   else if (R('POST', /^\/api\/users$/)) { adm(); if (!body.name || !/^\d{4}$/.test(body.pin)) err('Name and a 4-digit PIN are required'); const id = nextId(st.users); st.users.push({ id, name: body.name, pin: body.pin, role: body.role, notify: body.notify ? 1 : 0, active: 1 }); out = { id }; }
   else if (R('PUT', /^\/api\/users\/(\d+)$/)) { adm(); if (!body.name || !/^\d{4}$/.test(body.pin)) err('Name and a 4-digit PIN are required'); if (+m[1] === u.id && (body.role !== 'admin' || !body.active)) err('You cannot remove your own admin access'); Object.assign(st.users.find((x) => x.id == m[1]), { name: body.name, pin: body.pin, role: body.role, notify: body.notify ? 1 : 0, active: body.active ? 1 : 0 }); out = { ok: true }; }
   else if (R('POST', /^\/api\/(subscribe|test-push)$/)) out = { ok: true };
+  else if (R('POST', /^\/api\/ai$/)) { need(); await new Promise((r) => setTimeout(r, 700)); out = { text: 'This is the demo, so I can\'t look at real data here.\n\nIn the real app I answer questions like **“What is due this week?”** or **“Which units have unassigned painting?”** using your units and tasks.' }; }
   else err('Unknown request ' + path);
   save(st);
   return JSON.parse(JSON.stringify(out));

@@ -9,6 +9,8 @@ Phone app for unit turnovers: units, tasks per person, a tick when work is done,
    This adds `DATABASE_URL` automatically. Then Deployments → ⋯ → Redeploy.
 4. Open the site. First sign-in: **Liza**, PIN **0000** — change it in People. Other people's PINs are shown in People.
 
+AI assistant: add `GEMINI_API_KEY` (from https://aistudio.google.com/apikey) in Vercel → Settings → Environment Variables, then Redeploy. Optional: `GEMINI_MODEL` (default gemini-flash-latest), `APP_TIMEZONE` (default America/Edmonton).
+
 Optional environment variables: `ADMIN_NAME`, `ADMIN_PIN`, `VAPID_SUBJECT` (mailto:you@company), `VAPID_PUBLIC_KEY` / `VAPID_PRIVATE_KEY`
 (otherwise generated once and stored in the database).
 
