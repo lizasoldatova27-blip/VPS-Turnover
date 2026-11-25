@@ -174,7 +174,9 @@ async function viewApts(archived) {
       <div class="bar"><i style="width:${pct}%"></i></div></button>`;
   }
   body += `<button class="btn sec" id="arch" style="margin-top:8px">${archived ? '← Back to active units' : 'Archive'}</button>`;
+  if (S.user.role === 'admin') body += `<button class="btn sec" id="export" style="margin-top:8px">⬇ Export to Excel / Google Sheets</button>`;
   layout(archived ? 'Archive' : 'Units', body, { action: S.user.role === 'admin' && !archived ? '<button id="add">+ Unit</button>' : '' });
+  const ex = $app.querySelector('#export'); if (ex) ex.onclick = exportCsv;
   $app.querySelectorAll('[data-f]').forEach((b) => b.onclick = () => { S.filter = b.dataset.f; store.set('vps_filter', S.filter); viewApts(archived); });
   $app.querySelectorAll('[data-apt]').forEach((b) => b.onclick = () => location.hash = 'apt-' + b.dataset.apt);
   $app.querySelector('#arch').onclick = () => location.hash = archived ? 'apts' : 'archive';
@@ -412,6 +414,22 @@ async function viewSettings() {
   const t = $app.querySelector('#test'); if (t) t.onclick = () => api('POST', '/api/test-push').then(() => toast('Sent'));
   $app.querySelector('#arch').onclick = () => location.hash = 'archive';
   $app.querySelector('#out').onclick = () => logout();
+}
+
+// ---------- export ----------
+async function exportCsv() {
+  const o = await sheet('Export to a file (opens in Excel or Google Sheets)', [{ label: '✅ Completed units (all tasks done)', v: 'done' }, { label: '📋 All units and tasks', v: 'all' }]);
+  if (!o) return;
+  if (DEMO) return toast('Export works in the real app. The demo has no server.');
+  try {
+    const r = await fetch('/api/export?scope=' + o.v, { headers: { Authorization: 'Bearer ' + S.token } });
+    if (!r.ok) throw new Error((await r.json().catch(() => ({}))).error || 'Export failed');
+    const name = (r.headers.get('Content-Disposition') || '').match(/filename="(.+?)"/)?.[1] || 'VPS-turnover.csv';
+    const url = URL.createObjectURL(await r.blob());
+    const a = document.createElement('a'); a.href = url; a.download = name; document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 5000);
+    toast('Downloaded: ' + name);
+  } catch (e) { toast(e.message); }
 }
 
 // ---------- AI assistant ----------
