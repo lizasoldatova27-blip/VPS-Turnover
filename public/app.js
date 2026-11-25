@@ -165,7 +165,7 @@ async function viewApts(archived) {
   const props = [...new Set(list.map((a) => shortProp(a.property)))].sort();
   const f = props.includes(S.filter) || S.filter === '__un' ? S.filter : 'all';
   const shown = list.filter((a) => f === 'all' || (f === '__un' ? a.unassigned > 0 : shortProp(a.property) === f));
-  let body = `<div class="filters"><button class="chip ${f === 'all' ? 'on' : ''}" data-f="all">All (${list.length})</button>${S.user.role === 'admin' ? `<button class="chip ${f === '__un' ? 'on' : ''}" data-f="__un">Needs assigning (${list.filter((a) => a.unassigned > 0).length})</button>` : ''}${props.map((p) => `<button class="chip ${f === p ? 'on' : ''}" data-f="${esc(p)}">${esc(p)}</button>`).join('')}</div>`;
+  let body = `<div class="filters"><button class="chip ${f === 'all' ? 'on' : ''}" data-f="all">All (${list.length})</button>${S.user.role === 'admin' ? `<button class="chip ${f === '__un' ? 'on' : ''}" data-f="__un">Needs assigning (${list.filter((a) => a.unassigned > 0).length})</button>` : ''}${props.map((p) => `<button class="chip ${f === p ? 'on' : ''}" data-f="${esc(p)}">${esc(p)}</button>`).join('')}<button class="chip ${archived ? 'on' : ''}" id="archChip">📦 Archive</button></div>`;
   if (!shown.length) body += `<div class="empty">${archived ? 'Archive is empty' : 'No units yet'}</div>`;
   for (const a of shown) {
     const pct = a.total ? Math.round((a.done / a.total) * 100) : 0;
@@ -182,6 +182,7 @@ async function viewApts(archived) {
   $app.querySelectorAll('[data-f]').forEach((b) => b.onclick = () => { S.filter = b.dataset.f; store.set('vps_filter', S.filter); viewApts(archived); });
   $app.querySelectorAll('[data-apt]').forEach((b) => b.onclick = () => location.hash = 'apt-' + b.dataset.apt);
   $app.querySelector('#arch').onclick = () => location.hash = archived ? 'apts' : 'archive';
+  $app.querySelector('#archChip').onclick = () => location.hash = archived ? 'apts' : 'archive';
   const add = $app.querySelector('#add'); if (add) add.onclick = () => location.hash = 'new';
 }
 
@@ -428,7 +429,7 @@ async function sheetBox(el, archived) {
     const b = el.querySelector('#archNow');
     if (b) b.onclick = async () => {
       b.disabled = true;
-      try { const r = await api('POST', '/api/archive-now'); if (!r.ok) toast(r.error || 'Failed'); else { toast(r.archived ? `Moved ${r.archived} unit(s) to the sheet` : 'Nothing to archive yet'); if (r.archived) viewApts(archived); } }
+      try { const r = await api('POST', '/api/archive-now'); if (!r.ok) toast(r.error || 'Failed'); else { toast(r.archived ? `Moved ${r.archived} unit(s) to the sheet` : 'Google Sheet connected ✓ Nothing to archive yet'); if (r.archived) viewApts(archived); } }
       catch (e) { toast(e.message); }
       b.disabled = false;
     };
