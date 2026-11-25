@@ -4,7 +4,7 @@
 const DEMO = !!window.VPS_DEMO;
 const LOGO = window.VPS_LOGO || '/logo.png';
 const mem = {};
-const store = { get: (k) => { try { return store.get(k); } catch { return mem[k] ?? null; } }, set: (k, v) => { try { store.set(k, v); } catch { mem[k] = String(v); } }, del: (k) => { try { store.del(k); } catch { delete mem[k]; } } };
+const store = { get: (k) => { try { return localStorage.getItem(k); } catch { return mem[k] ?? null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch { mem[k] = String(v); } }, del: (k) => { try { localStorage.removeItem(k); } catch { delete mem[k]; } } };
 const $app = document.getElementById('app');
 const S = { token: store.get('vps_token'), user: null, vapidKey: null, people: [], filter: store.get('vps_filter') || 'all' };
 
@@ -165,7 +165,7 @@ async function viewApts(archived) {
   const props = [...new Set(list.map((a) => shortProp(a.property)))].sort();
   const f = props.includes(S.filter) || S.filter === '__un' ? S.filter : 'all';
   const shown = list.filter((a) => f === 'all' || (f === '__un' ? a.unassigned > 0 : shortProp(a.property) === f));
-  let body = `<div class="filters"><button class="chip ${f === 'all' ? 'on' : ''}" data-f="all">All (${list.length})</button>${S.user.role === 'admin' ? `<button class="chip ${f === '__un' ? 'on' : ''}" data-f="__un">Needs assigning (${list.filter((a) => a.unassigned > 0).length})</button>` : ''}${props.map((p) => `<button class="chip ${f === p ? 'on' : ''}" data-f="${esc(p)}">${esc(p)}</button>`).join('')}<button class="chip ${archived ? 'on' : ''}" id="archChip">📦 Archive</button></div>`;
+  let body = `<div class="filters"><button class="chip ${archived ? 'on' : ''}" id="archChip">📦 Archive</button><button class="chip ${f === 'all' ? 'on' : ''}" data-f="all">All (${list.length})</button>${S.user.role === 'admin' ? `<button class="chip ${f === '__un' ? 'on' : ''}" data-f="__un">Needs assigning (${list.filter((a) => a.unassigned > 0).length})</button>` : ''}${props.map((p) => `<button class="chip ${f === p ? 'on' : ''}" data-f="${esc(p)}">${esc(p)}</button>`).join('')}</div>`;
   if (!shown.length) body += `<div class="empty">${archived ? 'Archive is empty' : 'No units yet'}</div>`;
   for (const a of shown) {
     const pct = a.total ? Math.round((a.done / a.total) * 100) : 0;
