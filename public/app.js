@@ -467,7 +467,7 @@ function viewAi() {
     if (!text.trim() || S.aiBusy) return;
     S.chat.push({ role: 'user', text: text.trim() }); S.aiBusy = true; viewAi();
     try { const r = await api('POST', '/api/ai', { messages: S.chat }); S.chat.push({ role: 'model', text: r.text }); }
-    catch (e) { S.chat.push({ role: 'model', text: '⚠️ ' + e.message }); }
+    catch (e) { S.chat.push({ role: 'model', text: '⚠️ ' + (/fetch|network|^Error$/i.test(e.message) ? 'No answer from the AI (connection or timeout). Please try again.' : e.message) }); }
     S.aiBusy = false; if (location.hash === '#ai') viewAi();
   };
   $app.querySelectorAll('[data-tip]').forEach((b) => b.onclick = () => send(b.dataset.tip));
