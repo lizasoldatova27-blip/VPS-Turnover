@@ -175,8 +175,10 @@ async function viewApts(archived) {
   }
   body += `<button class="btn sec" id="arch" style="margin-top:8px">${archived ? '← Back to active units' : 'Archive'}</button>`;
   if (S.user.role === 'admin') body += `<button class="btn sec" id="export" style="margin-top:8px">⬇ Export to Excel / Google Sheets</button>`;
+  if (S.user.role === 'admin' && archived) body += `<div id="sheetbox"></div>`;
   layout(archived ? 'Archive' : 'Units', body, { action: S.user.role === 'admin' && !archived ? '<button id="add">+ Unit</button>' : '' });
   const ex = $app.querySelector('#export'); if (ex) ex.onclick = exportCsv;
+  const sb = $app.querySelector('#sheetbox'); if (sb) sheetBox(sb, archived);
   $app.querySelectorAll('[data-f]').forEach((b) => b.onclick = () => { S.filter = b.dataset.f; store.set('vps_filter', S.filter); viewApts(archived); });
   $app.querySelectorAll('[data-apt]').forEach((b) => b.onclick = () => location.hash = 'apt-' + b.dataset.apt);
   $app.querySelector('#arch').onclick = () => location.hash = archived ? 'apts' : 'archive';
@@ -417,6 +419,21 @@ async function viewSettings() {
 }
 
 // ---------- export ----------
+async function sheetBox(el, archived) {
+  try {
+    const i = await api('GET', '/api/archive-info');
+    el.innerHTML = `<div class="card small" style="margin-top:8px">📦 Units with every task done for ${i.days}+ days move here automatically every morning and are copied to the archive Google Sheet.
+      <a class="btn sec" style="margin-top:8px;display:block;text-align:center;text-decoration:none" href="${esc(i.sheet_url)}" target="_blank" rel="noopener">📊 Open archive Google Sheet</a>
+      ${i.connected ? '<button class="btn sec" id="archNow" style="margin-top:8px">Check now</button>' : '<div class="muted" style="margin-top:6px">Not connected yet: SHEETS_WEBHOOK_URL is missing in Vercel.</div>'}</div>`;
+    const b = el.querySelector('#archNow');
+    if (b) b.onclick = async () => {
+      b.disabled = true;
+      try { const r = await api('POST', '/api/archive-now'); if (!r.ok) toast(r.error || 'Failed'); else { toast(r.archived ? `Moved ${r.archived} unit(s) to the sheet` : 'Nothing to archive yet'); if (r.archived) viewApts(archived); } }
+      catch (e) { toast(e.message); }
+      b.disabled = false;
+    };
+  } catch (e) { el.innerHTML = ''; }
+}
 async function exportCsv() {
   const o = await sheet('Export to a file (opens in Excel or Google Sheets)', [{ label: '✅ Completed units (all tasks done)', v: 'done' }, { label: '📋 All units and tasks', v: 'all' }]);
   if (!o) return;

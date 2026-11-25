@@ -21,3 +21,14 @@ Push notifications: Android — Chrome; iPhone (iOS 16.4+) — open in Safari, S
 
 ## Demo without a server
     npm run build-demo   # dist/demo.html
+
+## Auto-archive to Google Sheets
+
+Every morning (Vercel Cron, `vercel.json`) units whose tasks are **all done for 30+ days** are copied
+(one row per task) to the archive Google Sheet and moved to the app's Archive.
+
+1. Open the sheet → Extensions → Apps Script → paste `google/archive-apps-script.gs` → Save.
+2. Deploy → New deployment → type **Web app** → Execute as **Me**, Who has access **Anyone** → Deploy → allow access.
+3. Copy the Web app URL. In Vercel → Settings → Environment Variables add `SHEETS_WEBHOOK_URL` = that URL.
+4. Optional: `CRON_SECRET` (any random text), `ARCHIVE_AFTER_DAYS` (default 30), `ARCHIVE_SHEET_URL`.
+5. Redeploy. Admins can also press **Check now** on the Archive screen.
