@@ -233,7 +233,7 @@ async function viewApt(id) {
     await api('POST', `/api/apartments/${id}/tasks`, { section: o.label, item: '', description: d.trim() }); viewApt(id);
   };
   $app.querySelector('#editApt').onclick = () => location.hash = 'edit-' + id;
-  $app.querySelector('#archApt').onclick = async () => { await api('PUT', '/api/apartments/' + id, { ...a, archived: !a.archived }); toast(a.archived ? 'Restored' : 'Moved to archive'); location.hash = 'apts'; };
+  $app.querySelector('#archApt').onclick = async () => { const r = await api('PUT', '/api/apartments/' + id, { ...a, archived: !a.archived }); toast(a.archived ? 'Restored' : r && r.sheet ? 'Moved to archive and Google Sheet ✓' : r && r.error ? 'Archived, but not copied to the sheet: ' + r.error : 'Moved to archive'); location.hash = 'apts'; };
   $app.querySelector('#delApt').onclick = async () => { if (await confirmBox(`Delete unit ${a.unit} and all its tasks?`)) { await api('DELETE', '/api/apartments/' + id); location.hash = 'apts'; } };
 }
 
